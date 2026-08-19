@@ -1,13 +1,41 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-42",
-    "name": "vec.Y",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Unitless",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-42",
+  "name": "vec.Y",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-43",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Code",
+      "x": 0.4720052083333333,
+      "y": 0.6142857142857143,
+      "uniqueID": "id-45",
+      "interpreterVersion": 1,
+      "code": "// edges.inShape\n\nfunction run() {\n  return [0, 1, 0]\n}",
+      "compiledCode": "\"use strict\";\n// edges.inShape\nfunction run() {\n    return [0, 1, 0];\n}\n"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-45",
+      "ap2ID": "id-43"
+    }
+  ],
+  "unitsKey": "Unitless",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
